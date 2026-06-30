@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "fasssaunen.html",
+  "entry": "fasssaunen.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-16T22:58:58.511Z",
+  "updatedAt": "2026-06-16T22:58:58.511Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

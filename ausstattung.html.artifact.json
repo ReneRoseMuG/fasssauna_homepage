@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "ausstattung.html",
+  "entry": "ausstattung.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-18T23:44:48.048Z",
+  "updatedAt": "2026-06-18T23:44:48.048Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "ausstellung.html",
+  "entry": "ausstellung.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-17T04:17:44.479Z",
+  "updatedAt": "2026-06-17T04:17:44.479Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

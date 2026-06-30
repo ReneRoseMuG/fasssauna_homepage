@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "fasssauna-v3.html",
+  "entry": "fasssauna-v3.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-14T06:40:56.761Z",
+  "updatedAt": "2026-06-14T06:40:56.761Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

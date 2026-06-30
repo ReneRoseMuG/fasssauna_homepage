@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Headline- & Eyebrow-Varianten · Fasssauna.de</title>
+<style>
+:root{
+  --bg:#ffffff;--bg-2:#f7f3ec;
+  --ink:#1C1D2C;--ink-soft:#3b3c49;
+  --green:#4f9e45;--green-deep:#246e1b;
+  --wood:#ae926c;--wood-mid:#997a50;--wood-deep:#8c6a3b;
+  --muted:#6f6a60;--line:rgba(28,29,44,.10);
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#ece6db;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h2{font-family:var(--display);font-weight:600;line-height:1.1;margin:0;color:var(--ink);font-size:clamp(26px,3.2vw,38px);letter-spacing:-.01em}
+.page{max-width:1080px;margin-inline:auto;padding:48px 28px 80px}
+.page>h1{font-family:var(--display);font-weight:600;font-size:30px;margin:0 0 6px}
+.page>.intro{color:var(--muted);max-width:60ch;margin:0 0 36px}
+.demo{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:clamp(28px,4vw,52px);margin-bottom:22px;position:relative;box-shadow:0 18px 44px -30px rgba(28,29,44,.4)}
+.demo.tint{background:var(--bg-2)}
+.label{position:absolute;top:14px;right:16px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--wood-deep);background:rgba(255,255,255,.7);border:1px dashed var(--wood-mid);border-radius:3px;padding:3px 8px}
+.note{font-size:13px;color:var(--muted);margin:14px 0 0;max-width:64ch}
+.lead{margin-top:18px;color:var(--muted);font-size:18px;max-width:60ch}
+
+/* ===== A — IST-ZUSTAND: Mono-Eyebrow + Strich, links ===== */
+.eyA{font-family:var(--mono);font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);margin:0 0 18px;display:flex;align-items:center;gap:12px}
+.eyA::before{content:"";width:28px;height:1px;background:var(--green);display:inline-block}
+
+/* ===== B — Sans-Eyebrow, kein Strich, ruhiger ===== */
+.eyB{font-family:var(--body);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--wood-deep);margin:0 0 14px}
+
+/* ===== C — Kein Eyebrow, Holz-Akzentlinie über der Headline ===== */
+.accentC{width:46px;height:3px;background:var(--green);border-radius:2px;margin-bottom:20px}
+
+/* ===== D — Eyebrow als kursive Serifen-Vorzeile (Markenstimme) ===== */
+.eyD{font-family:var(--display);font-style:italic;font-size:20px;color:var(--green-deep);margin:0 0 6px;letter-spacing:0}
+
+/* ===== E — Zentriert, Mono-Eyebrow mit Strich beidseitig ===== */
+.centerE{text-align:center}
+.eyE{font-family:var(--mono);font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);margin:0 0 18px;display:inline-flex;align-items:center;gap:12px;justify-content:center}
+.eyE::before,.eyE::after{content:"";width:28px;height:1px;background:var(--green);display:inline-block}
+.centerE .lead{margin-inline:auto}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Headline- &amp; Eyebrow-Varianten</h1>
+  <p class="intro">Dieselbe Sektion in fünf Kopf-Behandlungen — in den echten Marken­schriften und ‑farben. So lässt sich direkt vergleichen, was zur handwerklichen, warmen Markenstimme passt.</p>
+
+  <!-- A -->
+  <section class="demo">
+    <span class="label">A · Ist-Zustand</span>
+    <p class="eyA">Unsere Modelle</p>
+    <h2>Sechs Modelle, zwei Familien.</h2>
+    <p class="lead">Drei Oval Saunen und drei FassSaunen – jede entsteht in unserer Schreinerei.</p>
+    <p class="note">Monospace + Strich = technisch/editorial. Steht im Kontrast zur eleganten Serifen-Headline. Wiederholt sich an jeder Sektion.</p>
+  </section>
+
+  <!-- B -->
+  <section class="demo tint">
+    <span class="label">B · Sans, kein Strich</span>
+    <p class="eyB">Unsere Modelle</p>
+    <h2>Sechs Modelle, zwei Familien.</h2>
+    <p class="lead">Drei Oval Saunen und drei FassSaunen – jede entsteht in unserer Schreinerei.</p>
+    <p class="note">Gleiche Sans wie der Fließtext, Holz-Ton statt Grün. Ruhiger, weniger „Tech“, ordnet sich der Serifen-Headline unter.</p>
+  </section>
+
+  <!-- C -->
+  <section class="demo">
+    <span class="label">C · Akzentlinie, kein Eyebrow</span>
+    <div class="accentC"></div>
+    <h2>Sechs Modelle, zwei Familien.</h2>
+    <p class="lead">Drei Oval Saunen und drei FassSaunen – jede entsteht in unserer Schreinerei.</p>
+    <p class="note">Eyebrow ganz weg, nur ein kurzer Farbstrich als Auftakt. Klar, modern, am wenigsten „formelhaft“ über die Seite hinweg.</p>
+  </section>
+
+  <!-- D -->
+  <section class="demo tint">
+    <span class="label">D · Kursive Serifen-Vorzeile</span>
+    <p class="eyD">Unsere Modelle</p>
+    <h2>Sechs Modelle, zwei Familien.</h2>
+    <p class="lead">Drei Oval Saunen und drei FassSaunen – jede entsteht in unserer Schreinerei.</p>
+    <p class="note">Eyebrow in derselben Serifenschrift, kursiv – eine durchgehende, warme Typo-Stimme. Am „stimmigsten“ zur Headline, aber weniger Kontrast.</p>
+  </section>
+
+  <!-- E -->
+  <section class="demo centerE">
+    <span class="label">E · Zentriert (wie CTA-Band)</span>
+    <p class="eyE">Unsere Modelle</p>
+    <h2>Sechs Modelle, zwei Familien.</h2>
+    <p class="lead">Drei Oval Saunen und drei FassSaunen – jede entsteht in unserer Schreinerei.</p>
+    <p class="note">Falls du eher zur Mitte tendierst: gleiche Sektion zentriert. Dann sollte es konsequent überall zentriert sein – nicht gemischt.</p>
+  </section>
+</div>
+</body>
+</html>

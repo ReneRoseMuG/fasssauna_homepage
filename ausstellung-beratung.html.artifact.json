@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "ausstellung-beratung.html",
+  "entry": "ausstellung-beratung.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-18T23:30:27.303Z",
+  "updatedAt": "2026-06-18T23:30:27.303Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

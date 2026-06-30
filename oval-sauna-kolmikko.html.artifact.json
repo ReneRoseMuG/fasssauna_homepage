@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "oval-sauna-kolmikko.html",
+  "entry": "oval-sauna-kolmikko.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-16T22:56:59.325Z",
+  "updatedAt": "2026-06-16T22:56:59.325Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

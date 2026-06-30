@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "oval-saunen.html",
+  "entry": "oval-saunen.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-16T22:59:23.447Z",
+  "updatedAt": "2026-06-16T22:59:23.447Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

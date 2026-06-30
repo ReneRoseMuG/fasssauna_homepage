@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "beratungstermin.html",
+  "entry": "beratungstermin.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-14T03:14:25.446Z",
+  "updatedAt": "2026-06-14T03:14:25.446Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

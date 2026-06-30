@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variante E · Eyebrow & Headline zentriert, Text linksbündig</title>
+<style>
+:root{
+  --bg:#ffffff;--bg-2:#f7f3ec;
+  --ink:#1C1D2C;--ink-soft:#3b3c49;
+  --green:#4f9e45;--green-deep:#246e1b;
+  --wood:#ae926c;--wood-mid:#997a50;--wood-deep:#8c6a3b;
+  --muted:#6f6a60;--line:rgba(28,29,44,.10);
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#ece6db;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h2{font-family:var(--display);font-weight:600;line-height:1.1;margin:0;color:var(--ink);font-size:clamp(26px,3.2vw,38px);letter-spacing:-.01em;text-wrap:balance}
+.page{max-width:1080px;margin-inline:auto;padding:48px 28px 80px}
+.page>h1{font-family:var(--display);font-weight:600;font-size:28px;margin:0 0 30px}
+.demo{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:clamp(32px,4vw,60px);margin-bottom:22px;position:relative;box-shadow:0 18px 44px -30px rgba(28,29,44,.4)}
+.label{position:absolute;top:14px;right:16px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--wood-deep);background:rgba(255,255,255,.7);border:1px dashed var(--wood-mid);border-radius:3px;padding:3px 8px}
+
+/* zentrierter Kopf (Eyebrow + Headline) wie E */
+.sec-head{text-align:center}
+.eyebrow{font-family:var(--mono);font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);margin:0 0 18px;display:inline-flex;align-items:center;gap:12px;justify-content:center}
+.eyebrow::before,.eyebrow::after{content:"";width:28px;height:1px;background:var(--green);display:inline-block}
+
+/* E1 — Haupttext linksbündig, volle Inhaltsbreite */
+.lead{font-size:18px;color:var(--muted);line-height:1.65}
+.e1 .lead{text-align:left;margin-top:20px}
+
+/* E2 — Haupttext linksbündig, aber in zentrierter Spalte (sitzt mittig unter der Headline) */
+.e2 .lead{text-align:left;margin:20px auto 0;max-width:58ch}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Variante E – Kopf zentriert, Text linksbündig</h1>
+
+  <!-- E1 -->
+  <section class="demo e1">
+    <span class="label">E1 · Text links, volle Breite</span>
+    <div class="sec-head">
+      <p class="eyebrow">Unsere Modelle</p>
+      <h2>Sechs Modelle, zwei Familien.</h2>
+    </div>
+    <p class="lead">Drei Oval Saunen und drei FassSaunen – die FassSaunen wahlweise mit Vorraumverlängerung. Jede Sauna entsteht in unserer Schreinerei; Maße und Texte folgen auf den Einzelseiten.</p>
+  </section>
+
+  <!-- E2 -->
+  <section class="demo e2">
+    <span class="label">E2 · Text links, zentrierte Spalte</span>
+    <div class="sec-head">
+      <p class="eyebrow">Unsere Modelle</p>
+      <h2>Sechs Modelle, zwei Familien.</h2>
+    </div>
+    <p class="lead">Drei Oval Saunen und drei FassSaunen – die FassSaunen wahlweise mit Vorraumverlängerung. Jede Sauna entsteht in unserer Schreinerei; Maße und Texte folgen auf den Einzelseiten.</p>
+  </section>
+</div>
+</body>
+</html>

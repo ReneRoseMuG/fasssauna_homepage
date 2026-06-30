@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "oval-sauna-premium.html",
+  "entry": "oval-sauna-premium.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-16T22:56:59.262Z",
+  "updatedAt": "2026-06-16T22:56:59.262Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

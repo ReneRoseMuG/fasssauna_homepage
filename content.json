@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "zweck": "Kanonische Datenquelle (Single Source of Truth) fuer wiederkehrende Inhaltsbloecke, die auf mehreren Seiten identisch vorkommen. Wie models.json: das HTML bleibt statisch (SEO), diese Datei ist die Pflege-/Wahrheitsquelle und WordPress-Vorlage.",
+    "workflow": "Bei JEDER Textaenderung an einem hier beschriebenen Block: zuerst content.json aktualisieren, dann ALLE statischen Vorkommen im HTML nachziehen.",
+    "wordpress_mapping": "Wiederverwendbarer Block / Reusable Block bzw. Template-Part; Inhalte ggf. ueber ACF-Options (global) pflegbar."
+  },
+  "berater_band": {
+    "beschreibung": "Block \"Beratung und Kontakt\": zwei Ansprechpartner (Harm links, Michael rechts) mit einer mittigen Spalte aus zwei Text-Links. Gemaess Grundsatzregel: beide Aktionen als cat-link (kein gefuellter Button mehr).",
+    "vorkommen": [
+      "index.html (id=beratung)",
+      "oval-saunen.html",
+      "fasssaunen.html",
+      "vorraumvarianten.html",
+      "ausstattung.html",
+      "fasssauna-standard.html",
+      "fasssauna-standard-vorraum.html",
+      "fasssauna-xl.html",
+      "fasssauna-xl-vorraum.html",
+      "fasssauna-suuri.html",
+      "fasssauna-suuri-vorraum.html",
+      "oval-sauna-premium.html",
+      "oval-sauna-palkkio.html",
+      "oval-sauna-kolmikko.html"
+    ],
+    "eyebrow": "Beratung und Kontakt",
+    "titel": "Persönliche Beratung statt Direktkauf",
+    "text": "Unsere Saunen sind individuelle Produkte. Wünsche, abweichende Maße, Lieferung, die Gegebenheiten am Aufstellort und nötige bauliche Vorbedingungen klären wir vorab im persönlichen Gespräch. So passt Ihre Sauna am Ende exakt zu Ihnen und Ihrem Standort. Vereinbaren Sie gerne einen unverbindlichen Beratungstermin.",
+    "ansprechpartner": [
+      {
+        "name": "Harm Bruns",
+        "portrait": "assets/portrait-harmbruns.webp",
+        "telefon_label": "Mobil",
+        "telefon_anzeige": "(+49) 171 6000 660",
+        "telefon_href": "tel:+491716000660"
+      },
+      {
+        "name": "Michael Meisel",
+        "portrait": "assets/portrait-michael.webp",
+        "telefon_label": "Mobil",
+        "telefon_anzeige": "(+49) 171 6000 666",
+        "telefon_href": "tel:+491716000666"
+      }
+    ],
+    "aktionen": [
+      {
+        "label": "Beratungstermin vereinbaren",
+        "href": "beratungstermin.html",
+        "stil": "cat-link"
+      },
+      {
+        "label": "Kontaktformular",
+        "href": "kontakt.html",
+        "stil": "cat-link"
+      }
+    ]
+  }
+}

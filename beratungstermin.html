@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beratungstermin — Fasssauna.de</title>
+<style>
+:root{
+  --ink:#1C1D2C;--ink-deep:#15161F;--ink-soft:#25273A;
+  --cream:#F5F0E8;--wood:#C2925A;--wood-light:#E4C9A0;--wood-deep:#9C7038;
+  --fg-on-dark:#F2ECE1;--muted-dark:#9FA0AE;--line-dark:rgba(242,236,225,.14);
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --maxw:1240px;--gutter:clamp(20px,5vw,64px);--radius:4px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--fg-on-dark);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.12;margin:0}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--wood);margin:0 0 16px;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--wood)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;padding:14px 26px;border-radius:var(--radius);border:1px solid transparent;transition:.2s;cursor:pointer}
+.btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(4px)}
+.btn-primary{background:var(--wood);color:#231a0e}.btn-primary:hover{background:var(--wood-light)}
+.btn-ghost{border-color:var(--line-dark);color:var(--fg-on-dark)}.btn-ghost:hover{border-color:var(--wood);color:var(--wood-light)}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(28,29,44,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-dark)}
+.nav-inner{display:flex;align-items:center;height:72px;gap:20px}
+.brand{font-family:var(--display);font-size:23px;font-weight:600}.brand b{color:var(--wood)}
+.back{margin-left:auto;font-size:14.5px;color:var(--muted-dark)}.back:hover{color:var(--fg-on-dark)}
+
+/* Header */
+.head{padding:clamp(48px,7vw,90px) 0 clamp(28px,4vw,46px);text-align:center;
+  background:radial-gradient(120% 130% at 50% 0%,rgba(194,146,90,.15),transparent 60%)}
+.head h1{font-size:clamp(34px,5.5vw,60px);letter-spacing:-.01em;max-width:16ch;margin-inline:auto}
+.head h1 em{font-style:italic;color:var(--wood-light)}
+.head p{max-width:56ch;margin:22px auto 0;color:var(--muted-dark);font-size:18px}
+
+/* Layout */
+.cols{display:grid;grid-template-columns:1.6fr .9fr;gap:clamp(28px,5vw,56px);padding-block:clamp(20px,4vw,40px) clamp(64px,9vw,110px);align-items:start}
+
+/* Widget-Einbettung (Platzhalter) */
+.embed{background:var(--ink-soft);border:1px solid var(--line-dark);border-radius:var(--radius);overflow:hidden}
+.embed-bar{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line-dark);font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted-dark)}
+.embed-bar .dot{width:9px;height:9px;border-radius:50%;background:var(--wood)}
+.embed iframe{width:100%;height:660px;border:0;background:#fff;display:block}
+.embed-note{padding:16px 18px;font-size:13.5px;color:var(--muted-dark);border-top:1px solid var(--line-dark);background:var(--ink-deep)}
+.embed-note code{font-family:var(--mono);color:var(--wood-light);font-size:12.5px}
+
+/* Aside */
+.aside{display:flex;flex-direction:column;gap:22px}
+.info{background:var(--ink-soft);border:1px solid var(--line-dark);border-radius:var(--radius);padding:26px}
+.info h3{font-size:21px;margin-bottom:14px}
+.info ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.info li{display:flex;gap:12px;color:var(--muted-dark);font-size:15px;align-items:flex-start}
+.info li svg{flex:none;color:var(--wood);margin-top:2px}
+.info b{color:var(--fg-on-dark);font-weight:600;font-family:var(--body)}
+.steps3{display:flex;flex-direction:column;gap:0}
+.steps3 .s{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line-dark)}
+.steps3 .s:last-child{border-bottom:0}
+.steps3 .n{font-family:var(--display);color:var(--wood);font-size:26px;line-height:1;min-width:32px}
+.steps3 b{font-family:var(--body);font-weight:600;display:block;margin-bottom:2px}
+.steps3 small{color:var(--muted-dark);font-size:13.5px}
+
+.footer{background:var(--ink-deep);border-top:1px solid var(--line-dark);padding:32px 0;color:var(--muted-dark);font-size:13.5px;text-align:center}
+
+@media(max-width:860px){.cols{grid-template-columns:1fr}.embed iframe{height:560px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">Fass<b>sauna</b>.de</a>
+    <a class="back" href="index.html">← Zurück zur Startseite</a>
+  </div>
+</header>
+
+<section class="head">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center">Persönlich statt anonym</p>
+    <h1>Vereinbaren Sie Ihren <em>Beratungstermin.</em></h1>
+    <p>Wählen Sie einfach einen freien Termin. Wir beraten Sie zu Modell, Standort und Aufbau – ehrlich, unverbindlich und ohne Verkaufsdruck.</p>
+  </div>
+</section>
+
+<div class="wrap cols">
+
+  <!-- Nextcloud-Appointment-Widget (Platzhalter-Einbettung) -->
+  <div class="embed" data-od-id="termin-widget">
+    <div class="embed-bar"><span class="dot"></span> Terminbuchung · Nextcloud Appointments</div>
+    <!-- PLATZHALTER: echte Einbettungs-URL des Nextcloud-Appointment-Links wird nachgeliefert.
+         src einfach durch die finale URL ersetzen. -->
+    <iframe
+      title="Beratungstermin buchen (Platzhalter)"
+      src="data:text/html;charset=utf-8,%3C!doctype%20html%3E%3Cmeta%20charset%3D'utf-8'%3E%3Cstyle%3Ehtml%2Cbody%7Bheight%3A100%25%3Bmargin%3A0%7Dbody%7Bfont-family%3Asystem-ui%2Csans-serif%3Bdisplay%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%3Bbackground%3A%23f5f0e8%3Bcolor%3A%231C1D2C%7Ddiv%7Btext-align%3Acenter%3Bmax-width%3A420px%3Bpadding%3A32px%7Dh2%7Bfont-family%3AGeorgia%2Cserif%3Bfont-weight%3A600%7Dp%7Bcolor%3A%236f6a60%3Bfont-size%3A15px%3Bline-height%3A1.6%7D.b%7Bdisplay%3Ainline-block%3Bmargin-top%3A18px%3Bpadding%3A12px%2022px%3Bborder-radius%3A4px%3Bbackground%3A%23C2925A%3Bcolor%3A%23231a0e%3Bfont-weight%3A600%3Bfont-size%3A14px%7D%3C%2Fstyle%3E%3Cdiv%3E%3Ch2%3ETerminkalender%20wird%20hier%20eingebettet%3C%2Fh2%3E%3Cp%3EAn%20dieser%20Stelle%20erscheint%20das%20Nextcloud-Appointment-Widget.%20Die%20finale%20Einbettungs-URL%20wird%20nachgeliefert.%3C%2Fp%3E%3Cspan%20class%3D'b'%3EFreien%20Termin%20w%C3%A4hlen%3C%2Fspan%3E%3C%2Fdiv%3E">
+    </iframe>
+    <div class="embed-note">Platzhalter-Einbettung. Sobald die URL vorliegt, im <code>&lt;iframe src="…"&gt;</code> ersetzen (Nextcloud Appointments).</div>
+  </div>
+
+  <!-- Begleitende Infos -->
+  <aside class="aside">
+    <div class="info">
+      <h3>So läuft Ihr Termin</h3>
+      <div class="steps3">
+        <div class="s"><span class="n">1</span><div><b>Termin wählen</b><small>Freien Slot im Kalender buchen.</small></div></div>
+        <div class="s"><span class="n">2</span><div><b>Gespräch</b><small>Vor Ort, im Showroom oder telefonisch.</small></div></div>
+        <div class="s"><span class="n">3</span><div><b>Angebot</b><small>Individuell auf Ihr Projekt zugeschnitten.</small></div></div>
+      </div>
+    </div>
+    <div class="info">
+      <h3>Lieber direkt?</h3>
+      <ul>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span><b>Telefon</b> — Platzhalter</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg><span><b>E-Mail</b> — Platzhalter</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span><b>Ausstellung</b> — 450 m², Anfahrt folgt</span></li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<footer class="footer">
+  <div class="wrap">© 2026 Meisel &amp; Gerken GmbH · Fasssauna.de &nbsp;·&nbsp; <a href="index.html" style="color:var(--wood-light)">Startseite</a></div>
+</footer>
+
+</body>
+</html>

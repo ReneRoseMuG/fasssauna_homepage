@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "oval-sauna-palkkio.html",
+  "entry": "oval-sauna-palkkio.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-16T22:56:59.293Z",
+  "updatedAt": "2026-06-16T22:56:59.293Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "fasssauna-xl-vorraum.html",
+  "entry": "fasssauna-xl-vorraum.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-20T04:09:01.984Z",
+  "updatedAt": "2026-06-20T04:09:01.984Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

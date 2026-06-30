@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Fasssauna.de — Startseite (Gerüst v1)",
+  "entry": "fasssauna-startseite.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "primary": true,
+  "createdAt": "2026-06-14T03:16:31.998Z",
+  "updatedAt": "2026-06-14T03:16:32.033Z",
+  "designSystemId": "nvidia",
+  "metadata": {
+    "identifier": "fasssauna-startseite",
+    "artifactType": "text/html",
+    "inferred": false
+  }
+}
