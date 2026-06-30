@@ -36,7 +36,7 @@
       "slug": "oval-sauna-premium",
       "titel": "Oval Sauna Premium",
       "familie": "oval",
-      "kurztext": "Sauna und Ruheraum in einem Fass – das Original seit 1999. Saunieren, entspannen, zwischen den Gängen sogar schlafen.",
+      "kurztext": "Sauna und Ruheraum in einem Fass, das Original seit 1999. Saunieren, entspannen, zwischen den Gängen sogar schlafen.",
       "seite": "oval-sauna-premium.html",
       "bilder": {
         "aussen": "assets/bilder/oval-sauna-premium/oval-sauna-premium-card.png",
@@ -64,7 +64,7 @@
       "slug": "oval-sauna-kolmikko",
       "titel": "Oval Sauna Kolmikko",
       "familie": "oval",
-      "kurztext": "Heller, weiter Sauna-Raum mit Sitz- und Liegebereichen ganz nach Ihrem Wärmebedürfnis – wie geschaffen für die lebendige Wärme eines Holzofens.",
+      "kurztext": "Heller, weiter Sauna-Raum mit Sitz- und Liegebereichen ganz nach Ihrem Wärmebedürfnis, wie geschaffen für die lebendige Wärme eines Holzofens.",
       "seite": "oval-sauna-kolmikko.html",
       "bilder": {
         "aussen": "assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-card.png",
@@ -81,7 +81,7 @@
       "slug": "fasssauna-standard",
       "titel": "FassSauna Standard",
       "familie": "fass",
-      "kurztext": "Die klassische Fasssauna – das Original. Zu zweit liegen, zu viert bis sechst sitzen. Auch mit Vorraumverlängerung.",
+      "kurztext": "Die klassische Fasssauna, das Original. Zu zweit liegen, zu viert bis sechst sitzen. Auch mit Vorraumverlängerung.",
       "seite": "fasssauna-standard.html",
       "bilder": {
         "aussen": "assets/bilder/fasssauna-standard/fasssauna-standard-card.png",
@@ -92,8 +92,8 @@
         "titel_kurz": "Standard Vorraum",
         "titel_lang": "Standard mit Vorraum",
         "seite": "fasssauna-standard-vorraum.html",
-        "kurztext_start": "Die klassische Fasssauna plus geschützter Vorraum: umziehen, ablegen, im Warmen Pause machen. Ganzglastür zum Saunaraum.",
-        "kurztext_kategorie": "Die klassische Fasssauna plus geschützter Vorraum: umziehen, ablegen, im Warmen Pause machen. Ganzglastür zum Saunaraum.",
+        "kurztext_start": "Die klassische Fasssauna plus geschützter Vorraum zum Umziehen, Ablegen und im Warmen Pause machen. Ganzglastür zum Saunaraum.",
+        "kurztext_kategorie": "Die klassische Fasssauna plus geschützter Vorraum zum Umziehen, Ablegen und im Warmen Pause machen. Ganzglastür zum Saunaraum.",
         "bild": "assets/bilder/fasssauna-standard/fasssauna-standard-vorraum-card.png",
         "bild_hero": "assets/bilder/heros/fasssauna-standard-vorraum-hero.jpg"
       }
@@ -102,7 +102,7 @@
       "slug": "fasssauna-xl",
       "titel": "FassSauna XL",
       "familie": "fass",
-      "kurztext": "40 cm mehr Breite: besonders breite Liegen (ca. 75 cm) und ein großes Rückwandfenster. Auch mit Vorraumverlängerung.",
+      "kurztext": "40 cm mehr Breite mit besonders breiten Liegen (ca. 75 cm) und großem Rückwandfenster. Auch mit Vorraumverlängerung.",
       "seite": "fasssauna-xl.html",
       "bilder": {
         "aussen": "assets/bilder/fasssauna-xl/fasssauna-xl-card.png",
@@ -114,8 +114,8 @@
         "titel_kurz": "XL Vorraum",
         "titel_lang": "XL mit Vorraum",
         "seite": "fasssauna-xl-vorraum.html",
-        "kurztext_start": "Das vollständigste Fassmodell: XL-Breite, breite Liegen, großes Fenster – plus vollwertiger Vorraum.",
-        "kurztext_kategorie": "Das vollständigste Fassmodell: XL-Breite, breite Liegen, großes Fenster – plus vollwertiger Vorraum.",
+        "kurztext_start": "Das vollständigste Fassmodell mit XL-Breite, breiten Liegen und großem Fenster, plus vollwertiger Vorraum.",
+        "kurztext_kategorie": "Das vollständigste Fassmodell mit XL-Breite, breiten Liegen und großem Fenster, plus vollwertiger Vorraum.",
         "bild": "assets/bilder/fasssauna-xl/fasssauna-xl-vorraum-card.png",
         "bild_hero": "assets/bilder/heros/fasssauna-xl-vorraum-hero.jpg"
       }
@@ -124,7 +124,7 @@
       "slug": "fasssauna-suuri",
       "titel": "FassSauna Suuri",
       "familie": "fass",
-      "kurztext": "Die einzige Fasssauna mit Querliege. Zwei Ebenen, zwei Wärmebereiche – liegen wie in einer Oval-Sauna.",
+      "kurztext": "Die einzige Fasssauna mit Querliege. Zwei Ebenen, zwei Wärmebereiche, liegen wie in einer Oval-Sauna.",
       "seite": "fasssauna-suuri.html",
       "bilder": {
         "aussen": "assets/bilder/fasssauna-suuri/fasssauna-suuri-card.png",
@@ -135,8 +135,8 @@
         "titel_kurz": "Suuri Vorraum",
         "titel_lang": "Suuri mit Vorraum",
         "seite": "fasssauna-suuri-vorraum.html",
-        "kurztext_start": "Die Suuri mit Vorraumverlängerung – Querliege und zwei Ebenen plus geschützter Vorraum. Unsere größte Fass-Variante.",
-        "kurztext_kategorie": "Die Suuri mit Vorraumverlängerung – Querliege und zwei Ebenen plus geschützter Vorraum. Unsere größte Fass-Variante.",
+        "kurztext_start": "Die Suuri mit Vorraumverlängerung, Querliege und zwei Ebenen plus geschützter Vorraum. Unsere größte Fass-Variante.",
+        "kurztext_kategorie": "Die Suuri mit Vorraumverlängerung, Querliege und zwei Ebenen plus geschützter Vorraum. Unsere größte Fass-Variante.",
         "bild": "assets/bilder/fasssauna-suuri/fasssauna-suuri-vorraum-card.png",
         "bild_hero": null
       }
