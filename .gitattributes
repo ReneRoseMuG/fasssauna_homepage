@@ -1,0 +1,24 @@
+# Zeilenenden automatisch normalisieren: im Repo immer LF,
+# beim Auschecken die plattformüblichen Enden. Beendet die
+# CRLF/LF-Warnungen. Umlaute/UTF-8 bleiben unangetastet.
+* text=auto
+
+# Textdateien explizit (Diffs, konsistente Enden)
+*.html  text
+*.css   text
+*.js    text
+*.cjs   text
+*.json  text
+*.md    text
+*.txt   text
+*.svg   text
+
+# Bilder/Binärdateien: nie als Text behandeln
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.JPEG  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.pdf   binary

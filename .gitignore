@@ -1,0 +1,28 @@
+# --- Betriebssystem ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+# --- Editoren / IDEs ---
+.vscode/
+.idea/
+*.code-workspace
+*~
+*.swp
+
+# --- Temporär / Logs ---
+*.log
+*.tmp
+tmp/
+.cache/
+
+# --- Node (falls später Build-Tools dazukommen) ---
+node_modules/
+npm-debug.log*
+
+# Hinweis: Die Open-Design-Arbeitsdateien (*.artifact.json, *.bak,
+# der Ordner .od-skills/, Scratch-Dateien wie _variante-*.html) sind
+# aktuell bereits versioniert. Sie hier zu ignorieren wirkt erst,
+# nachdem sie aus der Versionierung entfernt wurden – siehe Chat.
