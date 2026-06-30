@@ -234,7 +234,7 @@ span.mega-head{cursor:default}
 /* ===== ÜBERSICHT / KARTEN ===== */
 .ov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .ov-card{display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .25s,box-shadow .25s}
-.ov-card:hover{transform:translateY(-5px);box-shadow:0 18px 44px -24px rgba(28,29,44,.35)}
+.ov-card:has(.ov-link):hover{transform:translateY(-5px);box-shadow:0 18px 44px -24px rgba(28,29,44,.35)}
 .ov-card .media{aspect-ratio:4/3}
 .ov-card .media img,.ov-card .media .ph{width:100%;height:100%;object-fit:cover}
 .ov-body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
