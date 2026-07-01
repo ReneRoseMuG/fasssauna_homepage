@@ -11,7 +11,7 @@
       "oval-saunen.html",
       "fasssaunen.html",
       "vorraumvarianten.html",
-      "ausstattung.html",
+      "ausstattung.html (id=beratung)",
       "fasssauna-standard.html",
       "fasssauna-standard-vorraum.html",
       "fasssauna-xl.html",
@@ -20,7 +20,9 @@
       "fasssauna-suuri-vorraum.html",
       "oval-sauna-premium.html",
       "oval-sauna-palkkio.html",
-      "oval-sauna-kolmikko.html"
+      "oval-sauna-kolmikko.html",
+      "lieferung-aufbau.html (id=beratung)",
+      "ausstellung-beratung.html (id=beratung)"
     ],
     "eyebrow": "Beratung und Kontakt",
     "titel": "Persönliche Beratung statt Direktkauf",
@@ -53,5 +55,78 @@
         "stil": "cat-link"
       }
     ]
+  },
+  "interesse_cta": {
+    "beschreibung": "Abschluss-Band vor dem Footer: gruener Interesse-Button, flankiert von zwei Zubehoer-Thumbnails (Aufgusskuebel links, Aufgusskelle rechts). Der Button springt per Anker auf das Berater-Band (#beratung) derselben Seite. Eigener Container (weisser Grund, Oberlinie), oben und unten gleich viel Luft.",
+    "vorkommen": [
+      "ausstattung.html",
+      "lieferung-aufbau.html",
+      "ausstellung-beratung.html"
+    ],
+    "button": {
+      "label": "Interesse?",
+      "href": "#beratung",
+      "stil": "btn btn-primary"
+    },
+    "thumbnails": [
+      {
+        "bild": "assets/bilder/services/zubehoer/sauna-aufgusskuebel.webp",
+        "alt": "Sauna-Aufgusskübel aus hellem Holz"
+      },
+      {
+        "bild": "assets/bilder/services/zubehoer/sauna-aufgusskelle.webp",
+        "alt": "Sauna-Aufgusskelle aus Holz"
+      }
+    ]
+  },
+  "ausstattung_teaser": {
+    "beschreibung": "Block \"Ausstattung-Teaser\": Querverweis von den Modellseiten auf ausstattung.html. Vier hervorgehobene Bild-Kacheln (Dach, Ofen, Inneneinrichtung, Fenster und Tueren), die auf die jeweiligen Abschnitte verlinken, plus abschliessender cat-link auf die Gesamtseite. Sitzt auf den Modellseiten unten direkt vor dem Footer.",
+    "vorkommen": [
+      "oval-sauna-kolmikko.html"
+    ],
+    "ausstehend": [
+      "fasssauna-standard.html",
+      "fasssauna-standard-vorraum.html",
+      "fasssauna-xl.html",
+      "fasssauna-xl-vorraum.html",
+      "fasssauna-suuri.html",
+      "fasssauna-suuri-vorraum.html",
+      "oval-sauna-premium.html",
+      "oval-sauna-palkkio.html"
+    ],
+    "eyebrow": "Ausstattung und Material",
+    "titel": "Ihre Sauna nach Maß",
+    "text": "Vom schützenden Dach über Einrichtungsdetails bis zu charaktervollen Materialvarianten gestalten Sie Ihre Sauna ganz nach Ihren Vorstellungen. Selbst Breite und Länge des Saunakorpus passen wir an, sodass ein ganz persönlicher Rückzugsort entsteht.",
+    "kacheln": [
+      {
+        "label": "Dachvarianten",
+        "href": "ausstattung.html#dach",
+        "bild": "assets/bilder/services/dachvarianten/dachvarianten.webp",
+        "alt": "Verschiedene Dachvarianten für Fass- und Oval-Saunen"
+      },
+      {
+        "label": "Öfen",
+        "href": "ausstattung.html#oefen",
+        "bild": "assets/bilder/services/holzofen-in-betrieb.webp",
+        "alt": "Holzbefeuerter Saunaofen mit loderndem Feuer"
+      },
+      {
+        "label": "Inneneinrichtung",
+        "href": "ausstattung.html#inneneinrichtung",
+        "bild": "assets/bilder/services/inneneinrichtung/inneneinrichtung-espe.jpg",
+        "alt": "Helle Espe/Abachi-Inneneinrichtung mit ruhiger Maserung"
+      },
+      {
+        "label": "Fenster und Türen",
+        "href": "ausstattung.html#fenster-tueren",
+        "bild": "assets/bilder/services/fenster/xl-rückwand-fenster-ambiente.webp",
+        "alt": "Rückwandfenster mit Panoramablick auf die verschneite Abendlandschaft"
+      }
+    ],
+    "link": {
+      "label": "Alles zu Ausstattung und Material",
+      "href": "ausstattung.html",
+      "stil": "cat-link"
+    }
   }
 }

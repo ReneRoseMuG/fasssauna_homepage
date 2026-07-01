@@ -1,0 +1,158 @@
+/* ============================================================================
+   Custom CSS Block für standalone HTML-Snippets — Variante OHNE Schriftvorgabe
+   ----------------------------------------------------------------------------
+   Wie snippet-custom.css, aber es wird KEINE font-family gesetzt (auch keine
+   --display/--body/--mono-Tokens). Dadurch erben alle Elemente die Schriftart
+   der einbettenden Homepage, die Homepage-Schrift gewinnt.
+   Größe, Gewicht, Versalien und Laufweite bleiben unverändert.
+   ============================================================================ */
+
+/* Grüne Fläche über volle Breite + Seitenabstand */
+.bb             { background: #e9efe1; padding-block: clamp(40px, 6vw, 80px);
+                  padding-inline: clamp(20px, 5vw, 64px); }
+
+/* Zone 1 – Headline: volle Breite, zentriert, KEIN Breitenlimit */
+.bb-title       { font-size: clamp(30px, 4vw, 44px); font-weight: 600; line-height: 1.2;
+                  letter-spacing: -0.01em; color: #1C1D2C;
+                  text-align: center; max-width: none; margin: 0 0 28px; }
+
+/* Wrapper für Zone 2 + 3 – zentriert */
+.bb-inner       { max-width: 1080px; margin-inline: auto; }
+
+/* Zone 2 – Text: Blocksatz, eigene Breite, Block zentriert */
+.bb-intro       { text-align: justify; max-width: 70ch; margin-inline: auto;
+                  color: #6f6a60; line-height: 1.7; }
+
+/* Zone 3 – Reihe: Harm | Links (Mitte) | Michael, 90% Breite, zentriert */
+.bb-grid        { width: 90%; margin-inline: auto; margin-top: 40px;
+                  display: grid; grid-template-columns: 1fr auto 1fr; gap: 22px;
+                  align-items: center; }
+.bb-actions     { order: 1; }                 /* Aktionen in die Mitte */
+.bb-card:nth-of-type(2) { order: 2; }         /* Michael nach rechts */
+
+/* Weiße Personen-Karte – ist gleichzeitig Container für die Umbruch-Logik */
+.bb-card        { container-type: inline-size;
+                  background: #ffffff; border: 1px solid rgba(28,29,44,.10); border-radius: 4px;
+                  box-shadow: 0 14px 34px -22px rgba(28,29,44,.4); padding: 20px 24px; }
+
+/* Karten-Innenraster: breit = Bild links, Name oben-rechts, Telefon unten-rechts */
+.bb-card-grid   { display: grid; grid-template-columns: auto 1fr; column-gap: 18px;
+                  align-items: center;
+                  grid-template-areas: "img name" "img phone"; }
+.bb-portrait    { grid-area: img; width: 74px; height: 74px; flex: none;
+                  border-radius: 50%; object-fit: cover; border: 2px solid #4f9e45; }
+.bb-name        { grid-area: name; align-self: end;
+                  font-size: 21px; font-weight: 600; color: #1C1D2C; }
+.bb-phone       { grid-area: phone; align-self: start;
+                  display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 6px;
+                  margin-top: 6px; font-weight: 600; font-size: 16px; color: #246e1b; }
+.bb-phone strong{ white-space: nowrap; }      /* Nummer nie buchstabenweise umbrechen */
+.bb-label       { text-transform: uppercase; letter-spacing: .1em; font-size: 11px; color: #6f6a60; }
+
+/* Bei Platzmangel in der KARTE: Name über Bild, Telefon unter Bild, zentriert */
+@container (max-width: 240px) {
+  .bb-card-grid { grid-template-columns: 1fr; row-gap: 10px; justify-items: center;
+                  text-align: center;
+                  grid-template-areas: "name" "img" "phone"; }
+  .bb-name      { align-self: auto; }
+  .bb-phone     { align-self: auto; margin-top: 0; justify-content: center; }
+}
+
+/* Aktionsspalte: grüne Pfeil-Links, zentriert */
+.bb-actions     { display: flex; flex-direction: column; justify-content: center;
+                  align-items: center; text-align: center; gap: 16px; }
+.bb-link        { display: inline-flex; align-items: center; gap: 8px;
+                  color: #246e1b; font-weight: 600; font-size: 17px; text-decoration: none;
+                  transition: color .2s; }
+.bb-link:hover  { color: #4f9e45; text-decoration: underline; text-underline-offset: 4px; }
+
+/* Responsiver Umbruch der Reihe */
+@media (max-width: 860px) {
+  .bb-grid    { width: 100%; grid-template-columns: 1fr 1fr; }
+  .bb-actions { order: 0; grid-column: 1 / -1; }   /* Aktionen volle Breite unten */
+  .bb-card:nth-of-type(2) { order: 0; }            /* normale Reihenfolge */
+}
+@media (max-width: 560px) {
+  .bb-grid { grid-template-columns: 1fr; }
+}
+
+/* Waagerechter Leerraum – gleiche Höhe wie der Abstand unter den Kontaktkarten */
+.bb-spacer { height: clamp(40px, 6vw, 80px); }
+
+/* ── Design-Tokens (Marke Fasssauna.de) — ohne Schrift-Tokens ─────── */
+:root{
+  --bg:#ffffff;--bg-2:#f7f3ec;--bg-3:#efe8dc;
+  --ink:#1C1D2C;--ink-soft:#3b3c49;
+  --green:#4f9e45;--green-deep:#246e1b;
+  --muted:#6f6a60;
+  --line:rgba(28,29,44,.10);
+  --maxw:1240px;--gutter:clamp(20px,5vw,64px);--radius:4px;
+  --masz-bg:#ece3d2; /* Hintergrund des „Sonstige Maße"-Bandes */
+}
+
+/* ── Basis (nur was diese Abschnitte brauchen) ────────────────────── */
+*{box-sizing:border-box}
+.section img{max-width:100%;display:block}
+.section h2,.section h3{font-weight:600;line-height:1.1;margin:0;color:var(--ink)}
+.section p{margin:0}
+
+/* ── Layout-Grundgerüst ───────────────────────────────────────────── */
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:clamp(56px,8vw,104px)}
+
+/* ── Sektionskopf (Eyebrow + Headline zentriert, Text 58ch) ───────── */
+.sec-head{margin-bottom:clamp(32px,5vw,56px);text-align:center}
+.sec-head h2{font-size:clamp(26px,3.2vw,38px);letter-spacing:-.01em;text-wrap:balance}
+.sec-head p:not(.eyebrow){margin:18px auto 0;max-width:58ch;text-align:left;color:var(--muted);font-size:18px}
+.eyebrow{font-style:italic;font-weight:600;font-size:clamp(18px,1.5vw,21px);color:var(--green-deep);margin:0 0 6px;display:block}
+
+/* ── Galerie (3 Innenansichten) ───────────────────────────────────── */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.gallery--3{grid-template-columns:repeat(3,1fr)}
+.gtile{margin:0;min-width:0}
+.gtile a{display:block}
+.gtile img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
+.gtile figcaption{margin-top:10px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);overflow-wrap:anywhere}
+
+/* ── Bänke + Sitzhöhen: zweispaltig, auf 80% eingehegt ────────────── */
+.masz-text2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,56px);width:80%;margin:clamp(28px,4vw,48px) auto 0}
+
+/* ── „Sonstige Maße"-Band: durchgezogene Fläche + Zeichnung links ─── */
+.masz-band{background:var(--masz-bg,#ece3d2)}
+.masz{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,56px);align-items:center}
+.masz-fig{margin:0;display:flex;align-items:center;justify-content:center}
+.masz-fig img{width:100%;height:auto;display:block}
+.masz-groups{display:flex;flex-direction:column;gap:26px}
+
+/* ── Maß-Gruppen (Listen mit grünem Punkt) ────────────────────────── */
+.masz-group h3{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-deep);margin:0 0 10px}
+.masz-group ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.masz-group li{position:relative;padding-left:18px;font-size:15.5px;line-height:1.55;color:var(--ink-soft)}
+.masz-group li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--green)}
+
+/* ── Grundriss-Kacheln (Innenraum-Maße): weiß, eingehegt, größere Abstände ── */
+.dgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(28px,4vw,44px);max-width:900px;margin-inline:auto}
+.dtile{display:block;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+.dtile:hover{transform:translateY(-3px);box-shadow:0 14px 34px -22px rgba(28,29,44,.4)}
+.dtile a{display:block;cursor:zoom-in}
+.dtile img{width:100%;aspect-ratio:3/2;object-fit:contain;display:block;padding:10px;background:var(--bg)}
+.dtile figcaption{padding:0 14px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center}
+
+/* ── Lightbox-Overlay ── */
+.lb-overlay{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;background:rgba(28,29,44,.93);padding:clamp(14px,4vw,48px)}
+.lb-overlay.is-open{display:flex}
+.lb-stage{margin:0;max-width:min(1100px,92vw);max-height:90vh;display:flex;flex-direction:column;align-items:center;gap:12px}
+.lb-img{max-width:100%;max-height:82vh;object-fit:contain;background:#fff;border-radius:4px;box-shadow:0 30px 80px -30px rgba(0,0,0,.6)}
+.lb-cap{font-size:13px;letter-spacing:.06em;color:#F4EFE6;text-align:center}
+.lb-close{position:absolute;top:14px;right:18px;width:44px;height:44px;border:0;background:transparent;color:#fff;font-size:34px;line-height:1;cursor:pointer}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:56px;height:56px;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:32px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.lb-nav:hover{background:rgba(255,255,255,.22)}
+.lb-nav[hidden]{display:none}
+.lb-prev{left:clamp(8px,2vw,28px)}
+.lb-next{right:clamp(8px,2vw,28px)}
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+@media(max-width:860px){.gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.masz{grid-template-columns:1fr}.masz-text2{grid-template-columns:1fr;width:100%}}
+@media(max-width:640px){.dgrid{grid-template-columns:1fr}.lb-nav{width:46px;height:46px;font-size:26px}}
+@media(max-width:480px){.gallery{grid-template-columns:1fr}}

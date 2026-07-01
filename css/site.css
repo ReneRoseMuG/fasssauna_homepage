@@ -256,6 +256,11 @@ span.mega-head{cursor:default}
 .cta-band h2{font-size:clamp(26px,3.2vw,38px);letter-spacing:-.01em;max-width:24ch;margin-inline:auto;text-wrap:balance}
 .cta-band p{margin:18px auto 0;max-width:58ch;text-align:left;color:var(--muted);font-size:18px}
 .cta-band .btn{margin-top:30px}
+/* Interesse-Band mit Zubehoer-Thumbnails (eigener Container, weisser Grund, oben/unten gleich viel Luft ueber .section) */
+.cta-band--zubehoer{background:var(--bg);border-top:1px solid var(--line)}
+.cta-interesse{display:inline-flex;align-items:center;justify-content:center;gap:clamp(48px,8vw,88px)}
+.cta-thumb{height:clamp(72px,10.5vw,96px);width:auto;max-width:156px;object-fit:contain}
+@media(max-width:520px){.cta-interesse{gap:26px}.cta-thumb{height:66px;max-width:108px}}
 
 /* ===== FOOTER ===== */
 .footer{background:var(--ink);color:var(--on-dark);padding-block:64px 32px}
@@ -356,6 +361,9 @@ span.mega-head{cursor:default}
 .card-body p{color:var(--muted);font-size:15px;flex:1}
 .card-link{font-size:14px;font-weight:600;color:var(--green-deep);display:inline-flex;gap:8px;align-items:center}
 .card-link::after{content:"";position:absolute;inset:0;z-index:1}
+
+/* Ausstattung-Teaser: Querverweis auf ausstattung.html. Kacheln nutzen den einheitlichen .gtile-Stil (kein eigener Kachel-Stil, kein Hover); hier nur die zentrierte Link-Zeile darunter. */
+.at-foot{margin-top:48px;text-align:center}
 .usp-grid{display:grid;gap:22px;grid-template-columns:repeat(2,1fr)}
 .usp{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(26px,3.2vw,40px)}
 .usp .ico{width:44px;height:44px;border:1px solid var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green-deep);margin-bottom:20px}
