@@ -82,7 +82,8 @@
   "ausstattung_teaser": {
     "beschreibung": "Block \"Ausstattung-Teaser\": Querverweis von den Modellseiten auf ausstattung.html. Vier hervorgehobene Bild-Kacheln (Dach, Ofen, Inneneinrichtung, Fenster und Tueren), die auf die jeweiligen Abschnitte verlinken, plus abschliessender cat-link auf die Gesamtseite. Sitzt auf den Modellseiten unten direkt vor dem Footer.",
     "vorkommen": [
-      "oval-sauna-kolmikko.html"
+      "oval-sauna-kolmikko.html",
+      "lieferung-aufbau.html"
     ],
     "ausstehend": [
       "fasssauna-standard.html",

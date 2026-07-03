@@ -185,6 +185,8 @@ span.mega-head{cursor:default}
 }
 /* 3er-Galerie (z. B. Innenansichten) */
 .gallery--3{grid-template-columns:repeat(3,1fr)}
+/* Breite Bildreihe (16:9) fuer echte Querformat-Aufnahmen, z. B. Fundament auf Lieferung & Aufbau. */
+.gallery--wide .gtile img,.gallery--wide .gtile .ph{aspect-ratio:16/9}
 /* Maß-Block: Zeichnung links, gruppierte Maße rechts */
 .masz-band{background:var(--masz-bg,#ece3d2)}
 .masz{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,56px);align-items:center}
