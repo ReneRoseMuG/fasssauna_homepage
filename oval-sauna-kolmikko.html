@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Oval Sauna Kolmikko · Fasssauna.de</title>
-<link rel="stylesheet" href="css/site.css?v=65">
+<link rel="stylesheet" href="css/site.css?v=73">
 </head>
 <body>
 
@@ -72,8 +72,8 @@
   <p class="lead">Schon beim Eintreten empfängt Sie ein großzügiger, weiter Innenraum. Das Fenster nach vorne gibt den Blick in Ihren Garten frei und lässt Sie ganz zur Ruhe kommen. Auf der einen Seite strecken Sie sich entspannt auf der durchgehenden Liege aus, gegenüber laden zwei Bänke auf unterschiedlichen Ebenen dazu ein, genau den Wärmebereich zu wählen, der Ihnen gerade guttut, so findet zu zweit oder in kleiner Runde jeder seinen eigenen Lieblingsplatz. Ihren besonderen Reiz entfaltet die Kolmikko mit einem Holzofen. Der großzügige Zuschnitt schafft den Platz dafür, und das sanfte Knistern und die lebendige, umhüllende Wärme eines echten Feuers verwandeln das Saunieren in ein Erlebnis, das ein Elektroofen so nicht bietet.</p>
 </section>
 
-<!-- Berater-Band (wiederverwendbare Komponente). Für Bild-Hintergrund: class="section berater-band berater-band--image" style="--band-img:url('…')" -->
-<section class="section berater-band">
+<!-- Teaser Berater (wiederverwendbare Komponente). Für Bild-Hintergrund: class="section teaser-berater teaser-berater--image" style="--band-img:url('…')" -->
+<section class="section teaser-berater">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Beratung und Kontakt</p>
@@ -111,9 +111,9 @@
       <p>Drei Blicke in den Innenraum und die vollständige Bemaßung, so lässt sich die Kolmikko bis ins Detail nachvollziehen.</p>
     </div>
     <div class="gallery gallery--3">
-      <figure class="gtile"><a href="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-links.jpg" data-lb data-lb-group="kolmikko-innen" data-caption="Untere Liege, linke Seite"><img src="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-links.jpg" alt="Oval Sauna Kolmikko, untere Liege auf der linken Seite"></a><figcaption>Untere Liege, linke Seite</figcaption></figure>
-      <figure class="gtile"><a href="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-zentral.jpg" data-lb data-lb-group="kolmikko-innen" data-caption="Zentrale Ansicht des Ofenbereichs"><img src="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-zentral.jpg" alt="Oval Sauna Kolmikko, zentrale Ansicht des Ofenbereichs"></a><figcaption>Zentrale Ansicht des Ofenbereichs</figcaption></figure>
-      <figure class="gtile"><a href="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-rechts.jpg" data-lb data-lb-group="kolmikko-innen" data-caption="Gestaffelte Liegeflächen rechts"><img src="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-rechts.jpg" alt="Oval Sauna Kolmikko, gestaffelte Liegeflächen auf der rechten Seite"></a><figcaption>Gestaffelte Liegeflächen rechts</figcaption></figure>
+      <figure class="gtile"><a class="gtile-zoom" href="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-links.jpg" data-lb data-lb-group="kolmikko-innen" data-caption="Untere Liege, linke Seite"><img src="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-links.jpg" alt="Oval Sauna Kolmikko, untere Liege auf der linken Seite"></a><figcaption>Untere Liege, linke Seite</figcaption></figure>
+      <figure class="gtile"><a class="gtile-zoom" href="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-zentral.jpg" data-lb data-lb-group="kolmikko-innen" data-caption="Zentrale Ansicht des Ofenbereichs"><img src="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-zentral.jpg" alt="Oval Sauna Kolmikko, zentrale Ansicht des Ofenbereichs"></a><figcaption>Zentrale Ansicht des Ofenbereichs</figcaption></figure>
+      <figure class="gtile"><a class="gtile-zoom" href="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-rechts.jpg" data-lb data-lb-group="kolmikko-innen" data-caption="Gestaffelte Liegeflächen rechts"><img src="assets/bilder/oval-sauna-kolmikko/oval-sauna-kolmikko-innen-rechts.jpg" alt="Oval Sauna Kolmikko, gestaffelte Liegeflächen auf der rechten Seite"></a><figcaption>Gestaffelte Liegeflächen rechts</figcaption></figure>
     </div>
 
     <div class="masz-text2">
@@ -189,8 +189,8 @@
   </div>
 </section>
 
-<!-- Ausstattung-Teaser (wiederverwendbare Komponente, Quelle: content.json -> ausstattung_teaser). Verlinkt auf ausstattung.html. -->
-<section class="section is-tint ausstattung-teaser">
+<!-- Teaser Ausstattung (wiederverwendbare Komponente, Quelle: content.json -> teaser_ausstattung). Verlinkt auf ausstattung.html. -->
+<section class="section is-tint teaser-ausstattung">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Ausstattung und Material</p>
@@ -198,13 +198,33 @@
       <p>Vom schützenden Dach über Einrichtungsdetails bis zu charaktervollen Materialvarianten gestalten Sie Ihre Sauna ganz nach Ihren Vorstellungen. Selbst Breite und Länge des Saunakorpus passen wir an, sodass ein ganz persönlicher Rückzugsort entsteht.</p>
     </div>
     <div class="gallery">
-      <figure class="gtile"><a href="ausstattung.html#dach"><img src="assets/bilder/services/dachvarianten/dachvarianten.webp" alt="Verschiedene Dachvarianten für Fass- und Oval-Saunen" loading="lazy"></a><figcaption>Dachvarianten</figcaption></figure>
-      <figure class="gtile"><a href="ausstattung.html#oefen"><img src="assets/bilder/services/holzofen-in-betrieb.webp" alt="Holzbefeuerter Saunaofen mit loderndem Feuer" loading="lazy"></a><figcaption>Öfen</figcaption></figure>
-      <figure class="gtile"><a href="ausstattung.html#inneneinrichtung"><img src="assets/bilder/services/inneneinrichtung/inneneinrichtung-espe.jpg" alt="Helle Espe/Abachi-Inneneinrichtung mit ruhiger Maserung" loading="lazy"></a><figcaption>Inneneinrichtung</figcaption></figure>
-      <figure class="gtile"><a href="ausstattung.html#fenster-tueren"><img src="assets/bilder/services/fenster/xl-rückwand-fenster-ambiente.webp" alt="Rückwandfenster mit Panoramablick auf die verschneite Abendlandschaft" loading="lazy"></a><figcaption>Fenster und Türen</figcaption></figure>
+      <figure class="gtile"><img src="assets/bilder/services/dachvarianten/dachvarianten.webp" alt="Verschiedene Dachvarianten für Fass- und Oval-Saunen" loading="lazy"><figcaption>Dachvarianten</figcaption></figure>
+      <figure class="gtile"><img src="assets/bilder/services/holzofen-in-betrieb.webp" alt="Holzbefeuerter Saunaofen mit loderndem Feuer" loading="lazy"><figcaption>Öfen</figcaption></figure>
+      <figure class="gtile"><img src="assets/bilder/services/inneneinrichtung/inneneinrichtung-espe.jpg" alt="Helle Espe/Abachi-Inneneinrichtung mit ruhiger Maserung" loading="lazy"><figcaption>Inneneinrichtung</figcaption></figure>
+      <figure class="gtile"><img src="assets/bilder/services/fenster/xl-rückwand-fenster-ambiente.webp" alt="Rückwandfenster mit Panoramablick auf die verschneite Abendlandschaft" loading="lazy"><figcaption>Fenster und Türen</figcaption></figure>
     </div>
     <div class="at-foot">
       <a class="cat-link" href="ausstattung.html">Alles zu Ausstattung und Material <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser Lieferung (wiederverwendbare Komponente, Quelle: content.json -> teaser_lieferung). Verlinkt auf lieferung-aufbau.html. -->
+<section class="section teaser-lieferung">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Lieferung und Aufbau</p>
+      <h2>Geliefert, montiert, einsatzbereit</h2>
+      <p>Wir liefern und montieren Ihre Sauna durch unser eigenes Team, ganz ohne Kran, sodass sie nach dem Anschluss durch einen Elektriker sofort einsatzbereit ist. Auch schwer zugängliche Aufstellorte erreichen wir, weil die Sauna in der Regel demontiert verpackt anreist und direkt vor Ort montiert wird.</p>
+    </div>
+    <div class="gallery">
+      <figure class="gtile"><img src="assets/bilder/services/elektroofen-mit-steinen.webp" alt="Saunaofen mit Saunasteinen als Teil des kompletten Lieferumfangs" loading="lazy"><figcaption>Lieferumfang</figcaption></figure>
+      <figure class="gtile"><img src="assets/bilder/services/vorbereitung/lieferung-sauna.webp" alt="Demontiert verpackte Sauna aus Thermoholz vor der Auslieferung" loading="lazy"><figcaption>Anlieferung</figcaption></figure>
+      <figure class="gtile"><img src="assets/bilder/services/lieferung.jpg" alt="Anlieferung und Montage einer fertigen Sauna durch das eigene Team" loading="lazy"><figcaption>Montage vor Ort</figcaption></figure>
+      <figure class="gtile"><img src="assets/bilder/services/vorbereitung/fundament-streifen.webp" alt="Streifenfundament als tragfähiger Untergrund für die Sauna" loading="lazy"><figcaption>Vorbereitung</figcaption></figure>
+    </div>
+    <div class="at-foot">
+      <a class="cat-link" href="lieferung-aufbau.html">Alles zu Lieferung und Aufbau <span class="arr">→</span></a>
     </div>
   </div>
 </section>

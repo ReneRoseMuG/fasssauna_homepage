@@ -2,10 +2,11 @@
   "_meta": {
     "zweck": "Kanonische Datenquelle (Single Source of Truth) fuer wiederkehrende Inhaltsbloecke, die auf mehreren Seiten identisch vorkommen. Wie models.json: das HTML bleibt statisch (SEO), diese Datei ist die Pflege-/Wahrheitsquelle und WordPress-Vorlage.",
     "workflow": "Bei JEDER Textaenderung an einem hier beschriebenen Block: zuerst content.json aktualisieren, dann ALLE statischen Vorkommen im HTML nachziehen.",
-    "wordpress_mapping": "Wiederverwendbarer Block / Reusable Block bzw. Template-Part; Inhalte ggf. ueber ACF-Options (global) pflegbar."
+    "wordpress_mapping": "Wiederverwendbarer Block / Reusable Block bzw. Template-Part; Inhalte ggf. ueber ACF-Options (global) pflegbar.",
+    "namensregel": "Wiederkehrende Querverweis-/Kontakt-Baender heissen einheitlich mit Praefix teaser_ (JSON-Schluessel) bzw. teaser- (CSS-/HTML-Klasse). Aktuell: teaser_berater, teaser_ausstattung, teaser_lieferung. Neue Teaser folgen demselben Schema. Demo aller Teaser: teaser-demo.html."
   },
-  "berater_band": {
-    "beschreibung": "Block \"Beratung und Kontakt\": zwei Ansprechpartner (Harm links, Michael rechts) mit einer mittigen Spalte aus zwei Text-Links. Gemaess Grundsatzregel: beide Aktionen als cat-link (kein gefuellter Button mehr).",
+  "teaser_berater": {
+    "beschreibung": "Teaser Berater (frueher \"Berater-Band\"): Block \"Beratung und Kontakt\" mit zwei Ansprechpartnern (Harm links, Michael rechts) und einer mittigen Spalte aus zwei Text-Links. Gemaess Grundsatzregel: beide Aktionen als cat-link (kein gefuellter Button mehr). Klasse: teaser-berater (Bild-Variante: teaser-berater--image).",
     "vorkommen": [
       "index.html (id=beratung)",
       "oval-saunen.html",
@@ -79,11 +80,10 @@
       }
     ]
   },
-  "ausstattung_teaser": {
-    "beschreibung": "Block \"Ausstattung-Teaser\": Querverweis von den Modellseiten auf ausstattung.html. Vier hervorgehobene Bild-Kacheln (Dach, Ofen, Inneneinrichtung, Fenster und Tueren), die auf die jeweiligen Abschnitte verlinken, plus abschliessender cat-link auf die Gesamtseite. Sitzt auf den Modellseiten unten direkt vor dem Footer.",
+  "teaser_ausstattung": {
+    "beschreibung": "Teaser Ausstattung (Klasse teaser-ausstattung): Querverweis von den Modellseiten auf ausstattung.html. Vier hervorgehobene Bild-Kacheln (Dach, Ofen, Inneneinrichtung, Fenster und Tueren), die auf die jeweiligen Abschnitte verlinken, plus abschliessender cat-link auf die Gesamtseite. Sitzt auf den Modellseiten unten direkt vor dem Footer.",
     "vorkommen": [
-      "oval-sauna-kolmikko.html",
-      "lieferung-aufbau.html"
+      "oval-sauna-kolmikko.html"
     ],
     "ausstehend": [
       "fasssauna-standard.html",
@@ -127,6 +127,57 @@
     "link": {
       "label": "Alles zu Ausstattung und Material",
       "href": "ausstattung.html",
+      "stil": "cat-link"
+    }
+  },
+  "teaser_lieferung": {
+    "beschreibung": "Teaser Lieferung (Klasse teaser-lieferung): Querverweis von den Modell- und Detailseiten auf lieferung-aufbau.html. Vier hervorgehobene Bild-Kacheln (Lieferumfang, Anlieferung, Montage vor Ort, Vorbereitung), die auf die jeweiligen Abschnitte verlinken, plus abschliessender cat-link auf die Gesamtseite. Baugleich zu teaser_ausstattung (Struktur .gallery/.gtile/.at-foot, kein eigenes CSS).",
+    "vorkommen": [
+      "teaser-demo.html",
+      "oval-sauna-kolmikko.html"
+    ],
+    "ausstehend": [
+      "fasssauna-standard.html",
+      "fasssauna-standard-vorraum.html",
+      "fasssauna-xl.html",
+      "fasssauna-xl-vorraum.html",
+      "fasssauna-suuri.html",
+      "fasssauna-suuri-vorraum.html",
+      "oval-sauna-premium.html",
+      "oval-sauna-palkkio.html"
+    ],
+    "eyebrow": "Lieferung und Aufbau",
+    "titel": "Geliefert, montiert, einsatzbereit",
+    "text": "Wir liefern und montieren Ihre Sauna durch unser eigenes Team, ganz ohne Kran, sodass sie nach dem Anschluss durch einen Elektriker sofort einsatzbereit ist. Auch schwer zugängliche Aufstellorte erreichen wir, weil die Sauna in der Regel demontiert verpackt anreist und direkt vor Ort montiert wird.",
+    "kacheln": [
+      {
+        "label": "Lieferumfang",
+        "href": "lieferung-aufbau.html#lieferumfang",
+        "bild": "assets/bilder/services/elektroofen-mit-steinen.webp",
+        "alt": "Saunaofen mit Saunasteinen als Teil des kompletten Lieferumfangs"
+      },
+      {
+        "label": "Anlieferung",
+        "href": "lieferung-aufbau.html",
+        "bild": "assets/bilder/services/vorbereitung/lieferung-sauna.webp",
+        "alt": "Demontiert verpackte Sauna aus Thermoholz vor der Auslieferung"
+      },
+      {
+        "label": "Montage vor Ort",
+        "href": "lieferung-aufbau.html",
+        "bild": "assets/bilder/services/lieferung.jpg",
+        "alt": "Anlieferung und Montage einer fertigen Sauna durch das eigene Team"
+      },
+      {
+        "label": "Vorbereitung",
+        "href": "lieferung-aufbau.html#vorbereitung",
+        "bild": "assets/bilder/services/vorbereitung/fundament-streifen.webp",
+        "alt": "Streifenfundament als tragfähiger Untergrund für die Sauna"
+      }
+    ],
+    "link": {
+      "label": "Alles zu Lieferung und Aufbau",
+      "href": "lieferung-aufbau.html",
       "stil": "cat-link"
     }
   }

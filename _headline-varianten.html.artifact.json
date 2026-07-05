@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "_headline-varianten.html",
+  "entry": "_headline-varianten.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-07-03T11:46:54.552Z",
+  "updatedAt": "2026-07-03T11:46:54.552Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}
