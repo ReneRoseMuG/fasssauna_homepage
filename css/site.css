@@ -82,6 +82,7 @@ p{margin:0}
 .mega-head{font-family:var(--display)!important;font-size:18px!important;font-weight:600;color:var(--ink)!important;padding-bottom:8px!important;margin-bottom:6px;border-bottom:1px solid var(--line)}
 a.mega-head:hover{color:var(--green-deep)!important}
 span.mega-head{cursor:default}
+.mega--narrow{grid-template-columns:1fr;min-width:240px}
 .mega-col a:not(.mega-head){font-size:15px;color:var(--muted);padding:7px 0!important}
 .mega-col a:not(.mega-head):hover{color:var(--green-deep)}
 .mega::before{content:"";position:absolute;left:0;right:0;top:-18px;height:18px} /* unsichtbare Brücke: hält Hover über der Lücke */
