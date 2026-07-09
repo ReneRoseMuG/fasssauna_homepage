@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "broschuere/vorbereitung.html",
+  "entry": "broschuere/vorbereitung.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-07-08T08:02:27.536Z",
+  "updatedAt": "2026-07-08T08:02:27.536Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

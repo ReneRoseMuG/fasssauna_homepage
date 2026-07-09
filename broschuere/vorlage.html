@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEITENTITEL — Produktbroschüre · Fasssauna.de</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/broschuere.css">
+</head>
+<body>
+  <div class="sheet">
+
+    <!-- Kopf: Wortmarke links, Themenkennung rechts (pro Seite anpassen). -->
+    <header class="doc-head">
+      <div class="wordmark">FASSSAUNA<span>.DE</span></div>
+      <div class="doc-tag">Produktbroschüre · THEMA</div>
+    </header>
+
+    <!-- Titelblock: zentrierte Headline, darunter der zentrierte Lead-Container. -->
+    <div class="lead-block">
+      <h1>Headline der Seite</h1>
+      <p class="lead">Einleitender Absatz. Links bündig im zentrierten Container.</p>
+    </div>
+
+    <!-- Textblock über die volle Breite (Holz-Linie links). Beliebig wiederholbar. -->
+    <div class="reqs">
+      <div class="req">
+        <h3>Zwischenüberschrift</h3>
+        <p>Fließtext.</p>
+      </div>
+    </div>
+
+    <!-- Optional: Mono-Label über einer Bildreihe. -->
+    <!-- <p class="group-label">Label</p> -->
+
+    <!-- Bildstrecke: 2×2 im 4:3-Format, randfüllend. Bilder unter bilder/ ablegen. -->
+    <div class="photo-grid">
+      <figure>
+        <span class="frame"><img src="bilder/DATEINAME.webp" alt="Bildbeschreibung"></span>
+        <figcaption>Bildunterschrift</figcaption>
+      </figure>
+      <!-- weitere <figure> nach Bedarf -->
+    </div>
+
+    <!-- Fuß: Firmierung rechts. -->
+    <footer class="doc-foot">
+      <span class="brand">Meisel &amp; Gerken GmbH</span>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "broschuere/vorlage.html",
+  "entry": "broschuere/vorlage.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-07-08T08:02:40.586Z",
+  "updatedAt": "2026-07-08T08:02:40.586Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

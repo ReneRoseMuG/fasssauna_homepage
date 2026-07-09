@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&display=swap');
+
+/* ============================================================
+   Produktbroschüre Fasssauna.de — gemeinsame Druckstile (A4 hoch)
+   Eigenständiges Projekt, unabhängig von der Website (site.css).
+   Markenwelt: dunkel #1C1D2C · Holz #ae926c · Serifen-Display
+   Jede Broschürenseite bindet nur diese eine Datei ein.
+   ============================================================ */
+:root{
+  --ink:#1C1D2C; --ink-soft:#3b3c49; --muted:#6f6a60;
+  --paper:#ffffff; --paper-warm:#f7f3ec; --paper-deep:#efe8dc;
+  --wood:#ae926c; --wood-deep:#8c6a3b; --wood-dark:#745c3a;
+  --green:#4f9e45; --line:rgba(28,29,44,.12);
+  --display:"EB Garamond","Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+
+/* Bildschirm: Bogen auf neutralem Grund, echte A4-Proportion. */
+html,body{margin:0}
+body{
+  background:#d9d4cc;
+  font-family:var(--body);
+  color:var(--ink);
+  padding:24px;
+  display:flex;flex-direction:column;align-items:center;gap:24px;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;
+}
+
+.sheet{
+  width:210mm;min-height:297mm;
+  background:var(--paper);
+  padding:15mm 16mm 13mm;
+  box-shadow:0 24px 60px -28px rgba(28,29,44,.55);
+  display:flex;flex-direction:column;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;
+}
+
+/* ── Kopf ─────────────────────────────────────────────── */
+.doc-head{
+  display:flex;align-items:baseline;justify-content:space-between;
+  padding-bottom:9px;border-bottom:1.5px solid var(--wood);
+}
+.wordmark{
+  font-family:var(--display);font-weight:600;font-size:19px;
+  letter-spacing:.02em;color:var(--ink);
+}
+.wordmark span{color:var(--wood-deep)}
+.doc-tag{
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--wood-dark);
+}
+
+/* ── Titelblock ──────────────────────────────────────── */
+.lead-block{margin-top:12mm}
+.eyebrow{
+  margin:0;font-family:var(--mono);font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--wood-deep);
+  display:flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:26px;height:1.5px;background:var(--wood);flex:none}
+h1{
+  margin:0;font-family:var(--display);font-weight:600;
+  font-size:40px;line-height:1.1;letter-spacing:.01em;color:var(--ink);
+  text-align:center;
+}
+.lead{
+  margin:22px auto 0;font-size:13px;line-height:1.62;color:var(--ink-soft);
+  max-width:58ch;text-align:left;
+}
+
+/* ── Voraussetzung / Textblock (volle Breite) ────────── */
+.reqs{margin-top:15mm}
+.req{padding-left:14px;border-left:2px solid var(--wood);}
+.req h3{
+  margin:0;font-family:var(--display);font-weight:600;font-size:16px;color:var(--ink);
+}
+.req p{margin:6px 0 0;font-size:12px;line-height:1.55;color:var(--ink-soft)}
+
+/* ── Bildstrecke ─────────────────────────────────────── */
+.group-label{
+  margin:9mm 0 4mm;font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--wood-deep);
+  display:flex;align-items:center;gap:14px;
+}
+.group-label::after{content:"";flex:1;height:1px;background:var(--line)}
+
+.photo-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:5mm 7mm;
+  margin-top:7mm;
+}
+figure{margin:0}
+figure .frame{
+  display:block;width:100%;aspect-ratio:4/3;overflow:hidden;
+  border:1px solid var(--line);background:var(--paper-warm);
+}
+figure img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+figcaption{
+  margin-top:7px;font-family:var(--mono);font-size:9.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--muted);
+}
+
+/* ── Fuß ─────────────────────────────────────────────── */
+.doc-foot{
+  margin-top:auto;padding-top:9px;border-top:1px solid var(--line);
+  display:flex;align-items:center;justify-content:flex-end;gap:16px;
+  font-size:10px;color:var(--muted);
+}
+.doc-foot .plan{color:var(--wood-dark);max-width:62ch;line-height:1.5}
+.doc-foot .brand{font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+
+/* ── Print ───────────────────────────────────────────── */
+@page{size:A4 portrait;margin:0}
+@media print{
+  body{background:#fff;padding:0;gap:0;display:block}
+  .sheet{box-shadow:none;width:auto;min-height:auto;margin:0}
+  /* Mehrseitig: jeder Bogen beginnt auf einer neuen Druckseite. */
+  .sheet + .sheet{break-before:page}
+}

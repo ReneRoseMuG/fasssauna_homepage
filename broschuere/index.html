@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produktbroschüre · Fasssauna.de — Übersicht</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/broschuere.css">
+<style>
+  /* Nur für diese interne Übersicht, nicht Teil der Druckseiten. */
+  body{display:block;padding:48px 24px}
+  .wrap{max-width:640px;margin:0 auto}
+  .head{border-bottom:1.5px solid var(--wood);padding-bottom:12px;margin-bottom:28px;
+    display:flex;align-items:baseline;justify-content:space-between}
+  .head .mark{font-family:var(--display);font-weight:600;font-size:22px}
+  .head .mark span{color:var(--wood-deep)}
+  .head .tag{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--wood-dark)}
+  h1{font-family:var(--display);font-size:30px;text-align:left;margin:0 0 6px}
+  .intro{font-size:14px;color:var(--ink-soft);line-height:1.6;margin:0 0 28px;max-width:56ch}
+  ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px}
+  li a{display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding:16px 18px;border:1px solid var(--line);border-radius:4px;text-decoration:none;
+    color:var(--ink);background:var(--paper);transition:background .15s,border-color .15s}
+  li a:hover{background:var(--paper-warm);border-color:var(--wood)}
+  li a .t{font-family:var(--display);font-weight:600;font-size:17px}
+  li a .n{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--wood-deep)}
+  li.todo span{padding:16px 18px;display:block;border:1px dashed var(--line);border-radius:4px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  @media print{ body{display:none} }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <div class="mark">FASSSAUNA<span>.DE</span></div>
+      <div class="tag">Produktbroschüre</div>
+    </div>
+    <h1>Broschüre · Übersicht</h1>
+    <p class="intro">Interne Startseite dieses Broschüren-Projekts. Jede Seite ist als eigene druckbare A4-Datei angelegt. Diese Übersicht wird nicht mitgedruckt.</p>
+    <ul>
+      <li><a href="vorbereitung.html"><span class="t">Vorbereitungen am Bauplatz</span><span class="n">Seite 01</span></a></li>
+      <li class="todo"><span>Seite 02 · geplant</span></li>
+      <li class="todo"><span>Seite 03 · geplant</span></li>
+      <li class="todo"><span>Seite 04 · geplant</span></li>
+    </ul>
+  </div>
+</body>
+</html>
